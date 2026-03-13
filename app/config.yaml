@@ -1,0 +1,25 @@
+database:
+  path: "./data/exchange_rates.db"
+
+sync:
+  # Валюты, которые будут синхронизироваться автоматически и вручную.
+  currencies:
+    - USD
+    - EUR
+    - PLN
+    - GBP
+
+  scheduler:
+    # Доступные режимы: interval или cron.
+    mode: "cron"
+
+    # Если mode=interval, используется это поле.
+    interval_seconds: 30
+
+    # Если mode=cron, используется запуск по времени.
+    hour: 19
+    minute: 15
+
+  # Если ежедневная синхронизация не найдёт данные за сегодня,
+  # можно попробовать загрузить ещё несколько последних дней.
+  daily_retry_days: 3
