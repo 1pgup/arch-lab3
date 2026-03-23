@@ -5,7 +5,6 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      # Храним БД и конфигурацию снаружи контейнера, чтобы данные не терялись.
       - ./data:/app/data
       - ./app/config.yaml:/app/app/config.yaml
     restart: unless-stopped
