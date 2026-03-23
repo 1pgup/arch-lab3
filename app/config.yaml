@@ -6,7 +6,6 @@ sync:
   currencies:
     - USD
     - EUR
-    - PLN
     - GBP
 
   scheduler:
