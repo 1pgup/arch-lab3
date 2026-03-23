@@ -69,7 +69,7 @@ async def lifespan(app: FastAPI):
 # Создаём объект FastAPI и задаём базовую информацию о сервисе.
 app = FastAPI(
     title="CZK Sync and Report Service",
-    description="Учебный сервис синхронизации и отчётов по курсам валют ČNB",
+    description="Сервис синхронизации и отчётов по курсам валют ČNB",
     version="1.0.0",
     lifespan=lifespan,
 )
